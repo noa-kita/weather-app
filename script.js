@@ -1,3 +1,4 @@
+require('dotenv').config();
 
 /* 
 API URL:
@@ -6,7 +7,7 @@ https://api.openweathermap.org/data/2.5/weather?lat={lat}&lon={lon}&appid={API k
 const city = 'Tokyo'; // 都市名を指定
 const lat = 35.6895; // 緯度を指定
 const lon = 139.6917; // 経度を指定
-const apiKey = '727acb9ec3b4beeea6dcd7f02781da65';
+const apiKey = process.env.API_KEY;
 const weatherUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric&lang=ja`;
 const geoUrl = `http://api.openweathermap.org/geo/1.0/direct?q=${city},{state code},{country code}&limit={limit}&appid=${apiKey}`;
 
