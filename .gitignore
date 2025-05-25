@@ -1,1 +1,8 @@
-.env
+# macOS
+.DS_Store
+
+# 環境変数
+constants.env
+
+# Node modules
+node_modules/
